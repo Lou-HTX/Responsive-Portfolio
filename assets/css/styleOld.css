@@ -1,0 +1,133 @@
+/*html {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    padding: 20px;
+    height: auto;
+
+}*/
+
+/*page margins, background, and width*/
+body {
+    background-image: url("../images/LuisMorenoBackground.png");
+    background-position: center;
+    background-size: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/*links in nav bar aside from name*/
+.headerlink {
+    float: left;
+    color: #bfbfbf;
+    text-decoration: none;
+    padding: 1%;
+}
+
+/*name in nav bar style*/
+.name:link, .name:visited {
+    float: left;
+    margin-left: 12.5%;
+    margin-right: 30%;
+    background-color: #2eb8b8;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1%;
+}
+
+/*link hover action for name in nav bar*/
+.name:hover, .name:active {
+    background-color: #3cc;
+}
+
+/*nav bar position and style*/
+ul {
+    background-color: #fff;
+    border-bottom: solid #2eb8b8 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*about me area*/
+#aboutme {
+    float: left;
+    background-color: #fff;
+    width: 45%;
+    padding: 3%;
+    margin-top: 10%;
+    margin-right: 3%;
+}
+
+/*padding added to bring text down further*/
+.text {
+    padding-top: 10%;
+}
+
+/*spacing between paragraphs for text*/
+.about {
+    padding-bottom: 2%;
+}
+
+/*about me image styling*/
+.AboutImg {
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+/*connect with me area*/
+.connect {
+    float: left;
+    background-color: #fff;
+    padding: 2%;
+    margin-top: 10%;
+}
+
+/*style for the headings connect with me and about me*/
+h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #2eb8b8;
+    padding-bottom: 4%;
+    border-bottom: solid;
+    border-bottom-color: #eee;
+    border-bottom-width: 5px;
+}
+
+/*adding space between the border of connect with me and the social media icons*/
+.icons {
+    padding-top: 4%;
+}
+
+/*footer bar with copyright info*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 10px;
+    border-top-color: #2eb8b8;
+    border-top-style: solid;
+    background-color: #036;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+}
+
+/*change the color of the link in the footer to white*/
+.footerlink {
+    color: #fff;
+    text-decoration: none;    
+}

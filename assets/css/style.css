@@ -1,0 +1,388 @@
+html,
+body {
+	/*margin: 0;*/
+    display: table;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/LuisMorenoBackground.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/*responsive content*/
+.wrapper {
+	height: auto;
+	margin-left: 12%;
+	margin-right: 3%;
+	margin-top: 7%;
+	height: auto;
+}
+
+/*links in nav bar aside from name*/
+.headerlink {
+    font-family: georgia, times, "times new roman", serif;
+    float: left;
+    color: #bfbfbf;
+    text-decoration: none;
+    padding: 1%;
+}
+
+/*name in nav bar style*/
+.name:link, .name:visited {
+    float: left;
+    font-family: georgia, times, "times new roman", serif;
+    margin-left: 12.5%;
+    margin-right: 38%;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1%;
+}
+
+/*link hover action for name in nav bar*/
+.name:hover, .name:active {
+    background-color: #3cc;
+}
+
+/*nav bar position and style*/
+ul {
+    background-color: #fff;
+    border-bottom: solid #ccc 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*about me area*/
+#aboutme {
+    font-family: arial, helvetica, sans-serif, 'helvetica neue';
+    float: left;
+    line-height: 120%;
+    background-color: #fff;
+    width: 50%;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    color: #777;
+}
+
+/*padding added to bring text down further*/
+.textabout {
+    padding-top: 10%;
+}
+
+/*spacing between paragraphs for text*/
+.about {
+    padding-bottom: 2%;
+}
+
+/*about me image styling*/
+.AboutImg {
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+/*connect with me area*/
+.connect {
+    float: left;
+    background-color: #fff;
+    padding: 2%;
+}
+
+/*style for the headings connect with me and about me*/
+h2 {
+    font-weight: bold;
+    font-family: georgia, times, "times new roman", serif;
+    font-size: 25px;
+    color: #4aaaa5;
+    padding-bottom: 4%;
+    border-bottom: solid;
+    border-bottom-color: #ddd;
+    border-bottom-width: 5px;
+}
+
+/*adding space between the border of connect with me and the social media icons*/
+.icons {
+    padding-top: 4%;
+}
+
+/*colored border for footer*/
+.footerwrapper {
+	border-top: 10px;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    padding: 20px;
+    height: auto;
+}
+
+/*sticky footer*/
+footer {
+    font-family: arial, helvetica, sans-serif, 'helvetica neue';
+	background-color: #666;
+	display: table-row;
+	height: 1px;
+	color: #fff;
+    text-align: center;
+}
+
+/*change the color of the link in the footer to white*/
+.footerlink {
+    color: #fff;
+    text-decoration: none;    
+}
+
+/*contact form fields*/
+input {
+    float: left;
+    width: 100%;
+}
+
+/*submit button for contact form*/
+input[type=submit] {
+    background-color: #4aaaa5;
+    width: 15%;
+    padding: 2%;
+    color: #fff;
+    float: left;
+    border: none;
+}
+
+/*contact form message text box*/
+textarea {
+    width: 100%;   
+}
+
+/*contact form*/
+.form {
+    color: #777;
+    padding-bottom: 1%;
+    padding-top: 5%;
+}
+
+
+/*portfolio images with caption text hover effect*/
+.container {
+    float: left;
+    padding: 1%;
+    width: 45%;
+    height: 300px;
+}
+
+
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay {
+    position: relative;
+    bottom: 50%;
+    background-color: #4aaaa5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+
+.container:hover .overlay {
+    height: 20%;
+}
+
+.text {
+    white-space: nowrap; 
+    color: #fff;
+    font-family: arial;
+    font-size: 20px;
+    padding: 1%;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 980px) {
+    
+    html,
+    body {
+        
+        
+        height: auto;
+        width: 100%;
+        background-image: url("../images/LuisMorenoBackground.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    #aboutme {
+        width: 40%;
+    }
+
+    .name:link, .name:visited {
+        margin-right: 22%;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .image {
+    width: auto;
+    height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    html,
+    body {
+        
+        
+        height: auto;
+        width: 100%;
+        background-image: url("../images/LuisMorenoBackground.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    #aboutme {
+        width: 95%;
+    }
+
+    .connect { 
+        width: 95%;
+        margin-bottom: 1%;
+        padding: 3%;
+    }
+    
+    .wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    /*contact form*/
+    .form {
+    color: #777;
+    padding-bottom: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    #aboutme {
+        width: 95%;
+        padding-bottom: 20%;
+    }
+
+    .connect { 
+        width: 95%;
+        margin-bottom: 5%;
+        padding: 3%;
+    }
+    
+    .wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20%;
+        width: auto;
+    }
+
+
+        /*links in nav bar aside from name*/
+    .headerlink {
+        font-family: georgia, times, "times new roman", serif;
+        float: left;
+        color: #bfbfbf;
+        text-decoration: none;
+        padding-left: 19%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    /*name in nav bar style*/
+    .name:link, .name:visited {
+        float: none;
+        font-family: georgia, times, "times new roman", serif;
+        background-color: #4aaaa5;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 37%;
+        padding-right: 37%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container {
+        float: none;
+        padding: 0;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        width: 100%;
+        /*height: 300px;*/
+    }
+
+
+    .image {
+        width: 100%;
+        height: 150%;
+        padding-bottom: 10%;
+    }
+
+
+    .overlay {
+        position: relative;
+        bottom: 80%;
+        background-color: #4aaaa5;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+
+
+.container:hover .overlay {
+    height: 20%;
+    }
+
+    /*contact form*/
+    .form {
+    color: #777;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    }
+
+    form {
+        margin-top: 8%;
+    }
+
+    /*link hover action for name in nav bar*/
+    .name:hover, .name:active {
+        background-color: #3cc;
+    }
+
+    /*nav bar position and style*/
+    ul {
+        background-color: #fff;
+        border-bottom: solid #ccc 5px;
+        position: fixed;
+        margin-top: 2%;
+    }
+
+}
